@@ -1,13 +1,8 @@
-mod pages;
-
-use pages::Home;
-
-use wasm_bindgen::prelude::*;
 use yew::prelude::*;
 
-struct Hello {}
+pub struct Home {}
 
-impl Component for Hello {
+impl Component for Home {
     type Message = ();
     type Properties = ();
 
@@ -24,11 +19,6 @@ impl Component for Hello {
     }
 
     fn view(&self) -> Html {
-        html! { <span>{"Hello World!"}</span> }
+        html! { <span>{"Home Sweet Home!"}</span> }
     }
-}
-
-#[wasm_bindgen(start)]
-pub fn run_app() {
-    App::<Home>::new().mount_to_body();
 }
