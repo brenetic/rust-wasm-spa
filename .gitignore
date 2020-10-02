@@ -1,2 +1,7 @@
 /target
 Cargo.lock
+
+wasm.d.ts
+wasm.js
+wasm_bg.d.ts
+wasm_bg.wasm
